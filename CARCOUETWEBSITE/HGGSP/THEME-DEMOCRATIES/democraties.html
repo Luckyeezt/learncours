@@ -77,23 +77,44 @@
         /* Style pour le bouton de redirection en bas */
         .button {
             display: block;
-            width: 100%;
+            width: 80%;
             padding: 20px;
             font-size: 18px;
             font-weight: 700;
             text-align: center;
-            color: #333;
-            background-color: #cec3c3;
+            color: #ffffff;
+            background-color: #000000;
             border: none;
             border-radius: 10px;
             cursor: pointer;
             transition: background-color 0.3s ease;
-            margin-top: 20px;
+            margin: 20px auto; /* Ajoutez 'auto' pour centrer horizontalement */
         }
 
         .button:hover {
-            background-color: #004466;
-            color: white;
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+        }
+
+        #button {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: 700;
+            text-align: center;
+            color: #ffffff;
+            background-color: #000000;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+            margin-top: 20px;
+            text-decoration: none;
+            background-color: orangered;
+        }
+        #button:hover {
+            opacity: 0.7;
         }
 
         a {
@@ -118,6 +139,7 @@
 <body>
     <header>
         <h1>Thèmes de HGGSP : Les Démocraties</h1>
+        <a href="../hggsp.html" id="button">Retour à l'accueil</a>
     </header>
     <main>
         <section id="introduction">
@@ -147,9 +169,6 @@
             </ul>
         </section>
 <hr>
-        <!-- Conteneur des boutons -->
-        <a href="../hggsp.html" class="button">Retour à l'accueil</a>
-        
         <!-- Bouton de redirection en bas -->
         <a href="demoathenienne.html" class="button">Démocratie Athénienne</a>
         <a href="constanttocqueville.html" class="button">Constant & Tocqueville</a>
