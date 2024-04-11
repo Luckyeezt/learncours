@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mathématiques</title>
+    <title>Mathématiques Spécifiques (Tronc Commun)</title>
     <style>  
         body {
             font-family: Arial, sans-serif;
@@ -21,6 +21,38 @@
         }
 
         .button {
+            display: block;
+            width: 80%;
+            padding: 20px;
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+            color: #ffffff;
+            background-color: #000000;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin: 20px auto; /* Ajoutez 'auto' pour centrer horizontalement */
+        }
+
+        .button:hover {
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: left;
+        }
+        #button {
             display: inline-block;
             padding: 12px 24px;
             font-size: 16px;
@@ -31,31 +63,13 @@
             border: none;
             border-radius: 10px;
             cursor: pointer;
-            transition: background-color 0.3s ease;
+            transition: opacity 0.3s ease;
             margin-top: 20px;
             text-decoration: none;
+            background-color: orangered;
         }
-
-        .button:hover {
-            background-color: white;
-            color: black;
-            border: 1px solid black;
-        }
-
-        .org {
-            background-color: orange;
-        }
-        
-        .warn {
-            font-size: 40px;
-            text-align: center;
-            margin-top: 40px;
-            position: relative; /* Position relative pour le conteneur de texte */
-            display: inline-block;
-            background: linear-gradient(to right, crimson, orange, gold, limegreen, dodgerblue, mediumslateblue, crimson);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        #button:hover {
+            opacity: 0.7;
         }
 
     </style>
@@ -63,9 +77,28 @@
 <body>
     <header>
         <h1>Mathématiques Spécifiques (Tronc Commun)</h1>
-        <a href="../../index.html" class="button org">Retour à l'accueil</a>
+        <a href="../../index.html" id="button">Retour à l'accueil</a>
     </header>
 
-    🏗️ <h2 class="warn">LA PAGE EST EN CONSTRUCTION</h2> 🏗️
+    <div class="content">
+        <h2 style="text-align: center;"><b>Mathématiques Spécifiques du Tronc Commun</b></h2>
+        <p>Les mathématiques spécifiques du tronc commun sont un ensemble de connaissances mathématiques essentielles pour de nombreux domaines académiques et professionnels. Cette page vise à fournir des informations et des ressources sur ce sujet.</p>
+        <p><b>Professeur</b> : Mr.Hariot.</p>
+        <p>EDT : 1h30 /semaine dans l'emploi du temps.</p> 
+        
+        <h3 style="text-align: center;">Programme des Mathématiques Spécifiques</h3>
+        <p>Les mathématiques spécifiques couvrent des sujets avancés tels que :</p>
+        <ul>
+            <li>Phénomène d'évolution : Croissances Linéaire/Exponentielle</li>
+            <li>Analyse de l'information chiffrée</li>
+            <li>Phénomène aléatoire</li>
+            <li>Probabilités et statistiques</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <!-- Lien vers une autre page avec un bouton -->
+    <a href="seriegeo.html" class="button">Séries Géométriques</a>
 </body>
 </html>
