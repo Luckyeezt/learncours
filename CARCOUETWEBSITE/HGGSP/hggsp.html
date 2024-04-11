@@ -34,41 +34,53 @@
         p {
             margin-bottom: 15px;
         }
-
-        /* Style pour les boutons */
-        .button-container {
-            width: 100%;
-            margin-bottom: 20px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .button-container a {
+        
+        #button {
             display: inline-block;
-            width: 200px;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: 700;
+            text-align: center;
+            color: #ffffff;
+            background-color: #000000;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+            margin-top: 20px;
+            text-decoration: none;
+            background-color: orangered;
+        }
+        #button:hover {
+            opacity: 0.7;
+        }
+        .button {
+            display: block;
+            width: 80%;
             padding: 20px;
             font-size: 18px;
             font-weight: 700;
             text-align: center;
-            color: #333;
-            background-color: #f0f0f0;
+            color: #ffffff;
+            background-color: #000000;
             border: none;
             border-radius: 10px;
             cursor: pointer;
             transition: background-color 0.3s ease;
-            margin: 0 10px;
-            text-decoration: none;
+            margin: 20px auto; /* Ajoutez 'auto' pour centrer horizontalement */
         }
 
-        .button-container a:hover {
-            background-color: #004466;
-            color: white;
+        .button:hover {
+            background-color: white;
+            color: black;
+            border: 1px solid black;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Spécialité HGGSP</h1>
+        <h1>Histoire-Géographie, Géopolitique & Sciences Politiques (HGGSP)</h1>
+        <a href="../../index.html" id="button">Retour à l'accueil</a>
     </header>
     <main>
         <section id="presentation">
@@ -96,10 +108,7 @@
         </section>
 
         <!-- Conteneur des boutons -->
-        <div class="button-container">
-            <a href="../../index.html">Retour à l'accueil</a>
-            <a href="./THEME-DEMOCRATIES/democraties.html">Les Démocraties</a>
-        </div>
+            <a href="./THEME-DEMOCRATIES/democraties.html" class="button">Thème - La démocratie & Les démocraties</a>
     </main>
 </body>
 </html>
