@@ -93,29 +93,32 @@
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
       }
 
-      #toschool {
-        background-color: #f39c12;
-        padding: 15px 30px;
-        border-radius: 10px;
-        cursor: pointer;
-        border: none;
-        font-weight: bold;
-        margin-top: 10px;
-        color: white;
-        font-size: 16px;
-        transition: opacity 0.3s ease;
-      }
-
-      #toschool:hover {
-        opacity: 0.7;
-      }
+       #button {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: 700;
+            text-align: center;
+            color: #ffffff;
+            background-color: #000000;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+            margin-top: 20px;
+            text-decoration: none;
+            background-color: orangered;
+        }
+        #button:hover {
+            opacity: 0.7;
+        }
     </style>
   </head>
   <body>
     <div class="header">
       <h1>Explications Linéaires - Classe 1-G2</h1>
       <!-- Bouton pour rediriger vers un autre site -->
-      <button onclick="toPage('school')" id="toschool">Aller sur e-lyco</button>
+      <a href="../francais.html" id="button">Retour à l'accueil</a>
     </div>
 
     <div class="container">
