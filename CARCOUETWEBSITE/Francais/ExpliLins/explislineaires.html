@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explications Linéaires</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        background-color: #f7f7f7;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: #333;
+      }
+
+      .header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .explic {
+        width: 100%;
+        margin-bottom: 20px;
+        background-color: #fff;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      }
+
+      .explic:hover {
+        transform: translateY(-5px);
+      }
+
+      /* Style des boutons */
+      .explic button {
+        width: 100%;
+        padding: 20px;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: left;
+        color: #333;
+        background-color: #f0f0f0;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 10px;
+      }
+
+      .explic button:hover {
+        background-color: #ddd;
+      }
+
+      h4 {
+        margin: 0;
+        font-size: 20px;
+      }
+
+      /* Style pour l'input de type password */
+      input[type="password"] {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-top: 10px;
+      }
+
+      input[type="password"]:focus {
+        outline: none;
+        border-color: #666;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      }
+
+      #toschool {
+        background-color: #f39c12;
+        padding: 15px 30px;
+        border-radius: 10px;
+        cursor: pointer;
+        border: none;
+        font-weight: bold;
+        margin-top: 10px;
+        color: white;
+        font-size: 16px;
+        transition: opacity 0.3s ease;
+      }
+
+      #toschool:hover {
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Explications Linéaires - Classe 1-G2</h1>
+      <!-- Bouton pour rediriger vers un autre site -->
+      <button onclick="toPage('school')" id="toschool">Aller sur e-lyco</button>
+    </div>
+
+    <div class="container">
+      <div class="explic">
+        <button onclick="toPage(1)">
+          <h4>
+            Explication Linéaire 1 : Voltaire, Candide, « Le Nègre de Surinam »,
+            1759.
+          </h4>
+        </button>
+      </div>
+
+      <div class="explic">
+        <button onclick="toPage(2)">
+          <h4>
+            Explication Linéaire 2 : Olympe de Gouges, DDFC, « Hommes, es-tu
+            capable d’être juste ? », 1791.
+          </h4>
+        </button>
+      </div>
+
+      <div class="explic">
+        <button onclick="toPage(3)">
+          <h4>
+            Explication Linéaire 3 : Olympe de Gouges, DDFC, Postambule, du
+            début à « vous n'avez qu'à le vouloir. », 1791.
+          </h4>
+        </button>
+      </div>
+
+      <div class="explic">
+        <button onclick="toPage(4)">
+          <h4>
+            Explication Linéaire 4 : Postambule, de « Les femmes ont fait » à «
+            nous serions toujours corrompus. », 1791.
+          </h4>
+        </button>
+      </div>
+
+      <div class="explic">
+        <button onclick="toPage(5)">
+          <h4>
+            Explication Linéaire 5 : Abbé Prévost, Manon Lescaut, La scène de
+            rencontre, 1753.
+          </h4>
+        </button>
+      </div>
+
+      <div class="explic">
+        <button onclick="toPage(6)">
+          <h4>
+            Explication Linéaire 6 : Abbé Prévost, Manon Lescaut, La scène de
+            retrouvailles, 1753.
+          </h4>
+        </button>
+      </div>
+
+      <div class="explic">
+        <button onclick="toPage(7)">
+          <h4>Explication Linéaire 7 : Emile Zola, Nana, 1880.</h4>
+        </button>
+      </div>
+
+      <div class="explic">
+        <button onclick="toPage(8)">
+          <h4>
+            Explication Linéaire 8 : Abbé Prévost, Manon Lescaut, L'évasion de
+            St-Lazare, 1753.
+          </h4>
+        </button>
+      </div>
+
+      <div class="explic">
+        <button onclick="toPage(9)">
+          <h4>
+            Explication Linéaire 9 : Arthur Rimbaud, Cahiers de Douai, "Le Mal",
+            1870
+          </h4>
+        </button>
+      </div>
+
+      <div class="explic">
+        <button onclick="toPage(10)">
+          <h4>
+            Explication Linéaire 10 : Arthur Rimbaud, Cahiers de Douai, "Roman",
+            1870
+          </h4>
+        </button>
+      </div>
+
+      <div class="explic">
+        <button onclick="toPage(11)">
+          <h4>
+            Explication Linéaire 11 : Arthur Rimbaud, Cahiers de Douai, "Au
+            Cabaret-Vert, 1870
+          </h4>
+        </button>
+      </div>
+
+      <div class="explic">
+        <h4>Lecture Cursive : Le Bal des Folles, Victoria Màs</h4>
+        <label>Mot de Passe : </label>
+        <input
+          type="password"
+          id="entry"
+          placeholder="Entrez le mot de passe"
+        />
+        <button onclick="verify()">Accédez à la page</button>
+      </div>
+    </div>
+
+    <script>
+      function toPage(page) {
+        // Redirection vers une autre page
+        switch (page) {
+          case 1:
+            window.location.href = "explilineaire1.html";
+            break;
+          case 2:
+            window.location.href = "explilineaire2.html";
+            break;
+          case 3:
+            window.location.href = "explilineaire3.html";
+            break;
+          case 4:
+            window.location.href = "explilineaire4.html";
+            break;
+          case 5:
+            window.location.href = "explilineaire5.html";
+            break;
+          case 6:
+            window.location.href = "explilineaire6.html";
+            break;
+          case 7:
+            window.location.href = "explilineaire7.html";
+            break;
+          case 8:
+            window.location.href = "explilineaire8.html";
+            break;
+          case 9:
+            window.location.href = "explilineaire9.html";
+            break;
+          case 10:
+            window.location.href = "explilineaire10.html";
+            break;
+          case 11:
+            window.location.href = "explilineaire11.html";
+            break;
+          case "school":
+            window.open("https://carcouet.paysdelaloire.e-lyco.fr/", "_blank");
+            break; // Ajout du break ici
+          default:
+            window.location.href = "accueil.html";
+            break; // Ajout du break ici
+        }
+      }
+
+      function verify() {
+        const pass = document.getElementById("entry").value;
+
+        if (pass === "adminaccess") {
+          window.location.href = "lebaldesfolles.html";
+        } else {
+          alert("Mot de passe incorrect");
+        }
+      }
+
+      // Ajout d'un événement sur la touche "Enter" pour le champ de mot de passe
+      document
+        .getElementById("entry")
+        .addEventListener("keyup", function (event) {
+          if (event.key === "Enter") {
+            verify();
+          }
+        });
+    </script>
+  </body>
+</html>
