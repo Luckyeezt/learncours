@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f9f9f9;
+          font-size: 18px;
+          color: #333;
+          line-height: 1.6;
+        }
+        h1, h2 {
+          text-align: center;
+          color: #666;
+        }
+        pre {
+          font-size: 18px;
+          border: 1px solid #ccc;
+          padding: 20px;
+          background-color: #fff;
+          border-radius: 5px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          white-space: pre-wrap;
+          font-family: Helvetica, sans-serif;
+          line-height: 1.6;
+          overflow-x: auto; /* Permet le défilement horizontal si nécessaire */
+        }
+        #container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 20px;
+        }
+        details {
+          background-color: #f9f9f9;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          margin-bottom: 20px;
+          max-width: 800px; /* Limite la largeur du détail pour une meilleure lisibilité */
+          margin: 0 auto; /* Centre le détail horizontalement */
+        }
+        summary {
+          font-weight: bold;
+          cursor: pointer;
+        }
+        .details-content {
+          margin-top: 10px;
+          padding-left: 20px;
+          border-left: 2px solid #666;
+        }
+        @media only screen and (max-width: 600px) {
+          body {
+            font-size: 16px;
+          }
+          pre {
+            font-size: 16px;
+            padding: 10px;
+          }
+        }
+      </style>
+  </head>
+  <body>
+    <h1>
+      Explication linéaire n°11 : "Au Cabaret-Vert".
+    </h1>
+    <h2>
+      Séquence 2 : Arthur Rimbaud, Cahiers de Douai, 1870.
+    </h2>
+    <button onclick="returnHome()" style="display: block; margin: 20px auto; padding: 10px 20px; font-size: 16px; font-weight: bold; background-color: #333; color: #fff; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;">
+        Retour à l'accueil
+      </button>
+
+    <details>
+      <summary>Introduction</summary>
+      <div class="details-content">
+        <p>
+            <b>Présentation de l'oeuvre -</b>
+            "Les Cahiers de Douai" est un recueil écrit par Arthur Rimbaud en 1870 considéré comme une œuvre majeure de la poésie symboliste française. Il contient des poèmes écrits par Rimbaud alors qu'il était encore adolescent, reflétant son éveil poétique précoce et sa rébellion contre les normes littéraires et sociales de son époque.
+            <br>
+            <b>Présentation du poème -</b>
+            Arthur  Rimbaud,  âgé  de  seize  ans,  s’enfuit  de  Charleville  pour  parcourir  les  routes.  Sa   seconde fugue, en octobre 1870, le mène à Charleroi après huit jours d’errance. Ce poème autobiographique relate une halte heureuse dans une auberge : « Le Cabaret-Vert », dont le nom véritable était « la Maison verte », car tout le mobilier était peint en vert.
+            <br>
+            <b style="color:green">Problématique :</b> Nous allons nous demander comment ce poème est un  poème  qui  exprime  le  bien-être  de  manière  surprenante  par  rapport à la tradition.
+
+        </p>
+      </div>
+
+    </details>
+
+    <div id="container">
+      <pre>
+        <h2 style="text-align:center;">Au Cabaret Vert</h2>
+        Depuis huit jours, j’avais déchiré mes bottines
+        Aux cailloux des chemins. J’entrais à Charleroi.
+        — Au Cabaret-Vert : je demandai des tartines
+        De beurre et du jambon qui fût à moitié froid.
+
+        Bienheureux, j’allongeai les jambes sous la table
+        Verte : je contemplai les sujets très naïfs
+        De la tapisserie. — Et ce fut adorable,
+        Quand la fille aux tétons énormes, aux yeux vifs,
+
+        — Celle-là, ce n’est pas un baiser qui l’épeure ! —
+        Rieuse, m’apporta des tartines de beurre,
+        Du jambon tiède, dans un plat colorié,
+
+        Du jambon rose et blanc parfumé d’une gousse
+        D’ail, – et m’emplit la chope immense, avec sa mousse
+        Que dorait un rayon de soleil arriéré.
+        </pre>
+    </div>
+
+    <script>
+        function returnHome() {
+  window.location.href = "index.html";
+}
+</script>
+  </body>
+</html>

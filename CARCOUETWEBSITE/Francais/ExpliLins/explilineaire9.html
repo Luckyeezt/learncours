@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f9f9f9;
+          font-size: 18px;
+          color: #333;
+          line-height: 1.6;
+        }
+        h1, h2 {
+          text-align: center;
+          color: #666;
+        }
+        pre {
+          font-size: 18px;
+          border: 1px solid #ccc;
+          padding: 20px;
+          background-color: #fff;
+          border-radius: 5px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          white-space: pre-wrap;
+          font-family: Helvetica, sans-serif;
+          line-height: 1.6;
+          overflow-x: auto; /* Permet le défilement horizontal si nécessaire */
+        }
+        #container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 20px;
+        }
+        details {
+          background-color: #f9f9f9;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          margin-bottom: 20px;
+          max-width: 800px; /* Limite la largeur du détail pour une meilleure lisibilité */
+          margin: 0 auto; /* Centre le détail horizontalement */
+        }
+        summary {
+          font-weight: bold;
+          cursor: pointer;
+        }
+        .details-content {
+          margin-top: 10px;
+          padding-left: 20px;
+          border-left: 2px solid #666;
+        }
+        @media only screen and (max-width: 600px) {
+          body {
+            font-size: 16px;
+          }
+          pre {
+            font-size: 16px;
+            padding: 10px;
+          }
+        }
+      </style>
+  </head>
+  <body>
+    <h1>
+      Explication linéaire n°9 : "Le Mal".
+    </h1>
+    <h2>
+      Séquence 2 : Arthur Rimbaud, Cahiers de Douai, 1870.
+    </h2>
+    <button onclick="returnHome()" style="display: block; margin: 20px auto; padding: 10px 20px; font-size: 16px; font-weight: bold; background-color: #333; color: #fff; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;">
+        Retour à l'accueil
+      </button>
+
+    <details>
+      <summary>Introduction</summary>
+      <div class="details-content">
+        <p>
+            <b>Présentation de l'extrait -</b>
+            C'est un poème contemporain de la guerre franco-prussienne de 1870 déclenchée par Napoléon III. Au cours de ses nombreuses fugues, le jeune Rimbaud alors âgé de 16 ans parcourt les campagnes dévastées et découvre les horreurs de la guerre. Il semble que le poète évoque ici la bataille de Sedan (septembre 1870). Il s’agit d’un sonnet en alexandrins constitué d’une seule phrase. Ce poème dénonce les horreurs de la guerre en nous offrant une description contrastée entre un champ de bataille et une église dans laquelle se recueillent les familles endeuillées.
+            <br>
+            <b style="color:green">Problématique :</b> Cela nous conduit à nous interroger sur la manière dont ce sonnet à travers la description de la guerre conduit à une dénonciation de la religion et à un appel à la libération de toutes les formes de pouvoir.
+
+        </p>
+      </div>
+
+    </details>
+
+    <div id="container">
+      <pre>
+        <h2 style="text-align:center;">Le Mal</h2>
+        Tandis que les crachats rouges de la mitraille
+        Sifflent tout le jour par l'infini du ciel bleu ;
+        Qu'écarlates ou verts, près du Roi qui les raille,
+        Croulent les bataillons en masse dans le feu ;
+
+        Tandis qu'une folie épouvantable, broie
+        Et fait de cent milliers d'hommes un tas fumant ;
+        - Pauvres morts ! dans l'été, dans l'herbe, dans ta joie,
+        Nature ! ô toi qui fis ces hommes saintement !... -
+
+        - Il est un Dieu, qui rit aux nappes damassées
+        Des autels, à l'encens, aux grands calices d'or ;
+        Qui dans le bercement des hosannah s'endort,
+
+        Et se réveille, quand des mères, ramassées
+        Dans l'angoisse, et pleurant sous leur vieux bonnet noir,
+        Lui donnent un gros sou lié dans leur mouchoir !
+        </pre>
+    </div>
+
+    <script>
+        function returnHome() {
+  window.location.href = "index.html";
+}
+</script>
+  </body>
+</html>

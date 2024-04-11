@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f9f9f9;
+          font-size: 18px;
+          color: #333;
+        }
+        h1, h2 {
+          text-align: center;
+          color: #666;
+        }
+        pre {
+          font-size: 18px;
+          border: 1px solid #ccc;
+          padding: 20px;
+          background-color: #fff;
+          border-radius: 5px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          white-space: pre-wrap;
+          font-family: Helvetica, sans-serif;
+          line-height: 1.6;
+          overflow-x: auto; /* Permet le défilement horizontal si nécessaire */
+          line-height: 2;
+        }
+        #container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 20px;
+        }
+        details {
+          background-color: #f9f9f9;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          margin-bottom: 20px;
+          max-width: 800px; /* Limite la largeur du détail pour une meilleure lisibilité */
+          margin: 0 auto; /* Centre le détail horizontalement */
+          line-height: 1.4;
+        }
+        summary {
+          font-weight: bold;
+          cursor: pointer;
+        }
+        .details-content {
+          margin-top: 10px;
+          padding-left: 20px;
+          border-left: 2px solid #666;
+        }
+        @media only screen and (max-width: 600px) {
+          body {
+            font-size: 16px;
+          }
+          pre {
+            font-size: 16px;
+            padding: 10px;
+          }
+        }
+      </style>
+  </head>
+  <body>
+    <h1>
+      Explication linéaire n°5 : Abbé Prévost, Manon Lescaut, La scène de rencontre.
+    </h1>
+    <h2>
+      Séquence 2 : Abbé Prévost, Manon Lescaut, 1753.
+    </h2>
+    <button onclick="returnHome()" style="display: block; margin: 20px auto; padding: 10px 20px; font-size: 16px; font-weight: bold; background-color: #333; color: #fff; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;">
+        Retour à l'accueil
+      </button>
+
+    <details>
+      <summary>Introduction</summary>
+      <div class="details-content">
+        <p>
+            <b>Présentation de l'oeuvre -</b>
+            "Manon Lescaut" est un roman du XVIIIe siècle écrit en 1733 par l'Abbé Prévost, un homme d'Église. Ce roman a été créé à une époque marquée par des changements politiques sous le règne strict de Louis XV. Le XVIIIe siècle a aussi vu l'émergence des Lumières, un mouvement philosophique qui valorise la raison plutôt que la religion. Ce mouvement a eu une grande influence sur l'auteur et le roman, en particulier le libertinage, qui prône la liberté des mœurs et de la pensée.
+            <br>
+            <b>Présentation de l'extrait -</b>
+            L’extrait précis étudié est la rencontre des deux protagonistes principaux, Des Grieux et Manon. DG est accompagné de son ami Tiberge, tandis que Manon arrive à Amiens par coche. Pour DG, cette rencontre est un véritable coup de foudre. Effectivement, cette scène est un topos romanesque célèbre de la littérature qui est la scène de coup de foudre.
+            <br>
+            <b style="color:green">Problématique :</b> Pour étudier cette scène, nous nous demanderons comment le chevalier DG raconte sa rencontre avec Manon.
+            <br>
+        
+        
+        </p>
+      </div>
+
+    </details>
+
+    <div id="container">
+      <pre>
+            J’avais marqué le temps de mon départ à Amiens. Hélas ! que ne le marquais-je un jour plus 
+tôt ! j’aurais porté chez mon père toute mon innocence. La veille même de celui que je devais 
+quitter cette ville, étant à me promener avec mon ami, qui s’appelait Tiberge, nous vîmes arriver le 
+coche d’Arras, et nous le suivîmes jusqu’à l’hôtellerie où ces voitures descendent. Nous n’avions 
+pas d’autre motif que la curiosité. Il en sortit quelques femmes, qui se retirèrent aussitôt. Mais il 
+en restait une, fort jeune, qui s’arrêta seule dans la cour, pendant qu’un homme d’un âge avancé,
+qui paraissait lui servir de conducteur, s’empressait pour faire tirer son équipage des paniers. Elle 
+me parut si charmante que moi, qui n’avais jamais pensé à la différence des sexes, ni regardé une 
+fille avec un peu d’attention, moi, dis-je, dont tout le monde admirait la sagesse et la retenue, je 
+me trouvai enflammé tout d’un coup jusqu’au transport. J’avais le défaut d’être excessivement
+timide et facile à déconcerter ; mais loin d’être arrêté alors par cette faiblesse, je m’avançai vers la 
+maîtresse de mon cœur. 
+        
+            Quoiqu’elle fût encore moins âgée que moi, elle reçut mes politesses sans paraître 
+embarrassée. Je lui demandai ce qui l’amenait à Amiens, et si elle y avait quelques personnes de 
+connaissance. Elle me répondit ingénument, qu’elle y était envoyée par ses parents, pour être 
+religieuse. L’amour me rendait déjà si éclairé, depuis un moment qu’il était dans mon cœur, que je 
+regardai ce dessein comme un coup mortel pour mes désirs. Je lui parlai d’une manière qui lui fit 
+comprendre mes sentiments, car elle était bien plus expérimentée que moi : c’était malgré elle 
+qu’on l’envoyait au couvent, pour arrêter sans doute son penchant au plaisir, qui s’était déjà 
+déclaré, et qui causé dans la suite tous ses malheurs et les miens.
+      </pre>
+    </div>
+
+    <script>
+        function returnHome() {
+  window.location.href = "index.html";
+}
+</script>
+  </body>
+</html>
