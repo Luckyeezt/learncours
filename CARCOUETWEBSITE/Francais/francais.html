@@ -21,9 +21,10 @@
         }
 
         .button {
-            display: inline-block;
-            padding: 12px 24px;
-            font-size: 16px;
+            display: block;
+            width: 80%;
+            padding: 20px;
+            font-size: 18px;
             font-weight: 700;
             text-align: center;
             color: #ffffff;
@@ -32,14 +33,17 @@
             border-radius: 10px;
             cursor: pointer;
             transition: background-color 0.3s ease;
-            margin-top: 20px;
-            text-decoration: none;
+            margin: 20px auto; /* Ajoutez 'auto' pour centrer horizontalement */
         }
 
         .button:hover {
             background-color: white;
             color: black;
             border: 1px solid black;
+        }
+
+        a {
+            text-decoration: none;
         }
 
         .org {
@@ -57,34 +61,6 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-                .button-container {
-            width: 100%;
-            margin-bottom: 20px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .button-container a {
-            display: inline-block;
-            width: 200px;
-            padding: 20px;
-            font-size: 18px;
-            font-weight: 700;
-            text-align: center;
-            color: #333;
-            background-color: #f0f0f0;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-
-        .button-container a:hover {
-            background-color: #004466;
-            color: white;
-        }
 
     </style>
 </head>
@@ -95,9 +71,7 @@
     </header>
 
     🏗️ <h2 class="warn">LA PAGE EST EN CONSTRUCTION</h2> 🏗️
-    <div class="button-container">
-        <a href="./ExpliLins/explislineaires.html">Les Explications Linéaires</a>
-    </div>
+        <a href="./ExpliLins/explislineaires.html" class="button">Les Explications Linéaires</a>
 
 </body>
 </html>
