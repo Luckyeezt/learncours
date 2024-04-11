@@ -1,196 +1,358 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Matières de Première Générale</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
-            text-align: center;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        color: #333;
+        text-align: center;
+      }
 
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-        }
+      header {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+      }
 
-        main {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+      main {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
 
-        h1 {
-            color: white;
-        }
+      h1 {
+        color: white;
+      }
 
-        .subject-list {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
+      .subject-list > div {
+        width: 100%; /* Largeur fixe */
+        height: 120px; /* Hauteur uniforme pour tous les boutons */
+        margin: 10px;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+      }
 
-        .subject-list a {
-            color: white;
-            font-weight: bold;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
+      .subject-list a {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
 
-        #maths {
-            background: linear-gradient(blue,cyan);
-            width: 200px;
-            height: 80px;
-            margin: 10px;
-            border-radius: 10px;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-            cursor:pointer;
-        }
+      #maths {
+        background: linear-gradient(blue, cyan);
+        width: 100%;
+        height: 80px;
+        margin: 10px;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        cursor: pointer;
+      }
 
-        #maths:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 12px cyan;
-        }
-        
-        #francais {
-            background: linear-gradient(yellow,orange);
-            width: 200px;
-            height: 80px;
-            margin: 10px;
-            border-radius: 10px;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-            cursor: pointer;
-        }
+      #maths:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px cyan;
+      }
 
-        #francais:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 12px rgb(255, 225, 0);
-        }
-        
-        #histoiregeo {
-            background: linear-gradient(red,crimson);
-            width: 200px;
-            height: 80px;
-            margin: 10px;
-            border-radius: 10px;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-            cursor: pointer;
-        }
+      #francais {
+        background: linear-gradient(yellow, orange);
+        width: 100%;
+        height: 80px;
+        margin: 10px;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        cursor: pointer;
+      }
 
-        #histoiregeo:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 12px crimson;
-        }
+      #francais:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px orange;
+      }
 
-        #hggsp {
-            background: linear-gradient(crimson, darkred);
-            width: 200px;
-            height: 80px;
-            margin: 10px;
-            border-radius: 10px;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-            cursor: pointer;
-        }
+      #histoiregeo {
+        background: linear-gradient(red, crimson);
+        width: 100%;
+        height: 80px;
+        margin: 10px;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        cursor: pointer;
+      }
 
-        #hggsp:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 12px darkred;
-        }
-        #nsi {
-            background: linear-gradient(black,gray);
-            width: 200px;
-            height: 80px;
-            margin: 10px;
-            border-radius: 10px;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-            cursor: pointer;
-        }
+      #histoiregeo:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px crimson;
+      }
 
-        #nsi:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 12px gray;
-        }
+      #hggsp {
+        background: linear-gradient(crimson, darkred);
+        width: 100%;
+        height: 80px;
+        margin: 10px;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        cursor: pointer;
+      }
 
-        #anglais {
-            background: linear-gradient(darkgreen,lime);
-            width: 200px;
-            height: 80px;
-            margin: 10px;
-            border-radius: 10px;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-            cursor: pointer;
-        }
+      #hggsp:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px darkred;
+      }
+      #nsi {
+        background: linear-gradient(black, gray);
+        width: 100%;
+        height: 80px;
+        margin: 10px;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        cursor: pointer;
+      }
 
-        #anglais:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 12px lime;
-        }
+      #nsi:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px gray;
+      }
+
+      #anglais {
+        background: linear-gradient(darkgreen, lime);
+        width: 100%;
+        height: 80px;
+        margin: 10px;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        cursor: pointer;
+      }
+
+      #anglais:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px lime;
+      }
+      #sport {
+        background: linear-gradient(deeppink, salmon);
+        width: 100%;
+        height: 80px;
+        margin: 10px;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        cursor: pointer;
+      }
+
+      #sport:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px salmon;
+      }
+      #espagnol {
+        background: linear-gradient(#ff7f00, orange);
+        width: 100%;
+        height: 80px;
+        margin: 10px;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        cursor: pointer;
+      }
+
+      #espagnol:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px orange;
+      }
+      #svt {
+        background: linear-gradient(#5a5e6b, silver);
+        width: 100%;
+        height: 80px;
+        margin: 10px;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        cursor: pointer;
+      }
+
+      #svt:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px silver;
+      }
+      #chimie {
+        background: linear-gradient(#3d2b1f, #856d4d);
+        width: 100%;
+        height: 80px;
+        margin: 10px;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        cursor: pointer;
+      }
+
+      #chimie:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px #856d4d;
+      }
+      #llce {
+        background: linear-gradient(teal, #80d0d0);
+        width: 100%;
+        height: 80px;
+        margin: 10px;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        cursor: pointer;
+      }
+
+      #llce:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px #80d0d0;
+      }
+
+      #discord {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #7289da;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+        text-align: center;
+      }
+
+      #discord a {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        margin-left: 10px;
+        transition: color 0.3s ease;
+        text-align: center;
+      }
+
+      #discord:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Matières de Première Générale</h1>
+      <h1>Matières de Première Générale</h1>
+      <div id="discord">
+          Discord : luksoppe
+      </div>
     </header>
     <main>
-        <div class="subject-list">
-            <div id="maths">
-                <a href="./CARCOUETWEBSITE/MATHS/maths.html">Mathématiques</a>
-            </div>
-            <div id="francais">
-                <a href="./CARCOUETWEBSITE/FRANCAIS/francais.html">Français</a>
-            </div>
-            <div id="histoiregeo">
-                <a href="./CARCOUETWEBSITE/HISTOIREGEO/histoiregeo.html">Histoire-Géographie</a>
-            </div>
-            <div id="hggsp">
-                <a href="./CARCOUETWEBSITE/HGGSP/hggsp.html">Histoire-Géographie-Géopolitique & Sciences Politiques (HGGSP)</a>
-            </div>
-            <div id="nsi">
-                <a href="./CARCOUETWEBSITE/NSI/nsi.html">Numériques et Sciences Informatiques (NSI)
-                </a>
-            </div>
-            <div id="anglais">
-                <a href="./CARCOUETWEBSITE/ANGLAIS/anglais.html">Anglais</a>
-            </div>
-            <!-- Ajouter d'autres matières ici -->
+      <div class="subject-list">
+        <div id="maths">
+          <a href="./CARCOUETWEBSITE/MATHS/maths.html">Mathématiques</a>
         </div>
+        <div id="francais">
+          <a href="./CARCOUETWEBSITE/FRANCAIS/francais.html">Français</a>
+        </div>
+        <div id="histoiregeo">
+          <a href="./CARCOUETWEBSITE/HISTOIREGEO/histoiregeo.html"
+            >Histoire-Géographie</a
+          >
+        </div>
+        <div id="hggsp">
+          <a href="./CARCOUETWEBSITE/HGGSP/hggsp.html"
+            >Histoire-Géographie-Géopolitique & Sciences Politiques (HGGSP)</a
+          >
+        </div>
+        <div id="nsi">
+          <a href="./CARCOUETWEBSITE/NSI/nsi.html"
+            >Numériques et Sciences Informatiques (NSI)
+          </a>
+        </div>
+        <div id="anglais">
+          <a href="./CARCOUETWEBSITE/ANGLAIS/anglais.html">Anglais</a>
+        </div>
+        <div id="sport">
+          <a href="./CARCOUETWEBSITE/SPORT/sport.html"
+            >Education Physique & Sportive</a
+          >
+        </div>
+        <div id="espagnol">
+          <a href="./CARCOUETWEBSITE/ESPAGNOL/espagnol.html">Espagnol</a>
+        </div>
+        <div id="svt">
+          <a href="./CARCOUETWEBSITE/SVT/svt.html"
+            >Sciences & Vie de la Terre (SVT)</a
+          >
+        </div>
+        <div id="chimie">
+          <a href="./CARCOUETWEBSITE/PHYSIQUECHIMIE/chimie.html"
+            >Physique-Chimie</a
+          >
+        </div>
+        <div id="llce">
+          <a href="./CARCOUETWEBSITE/LLCE/llce.html"
+            >Langues et Littératures des Cultures Etrangères (LLCE)</a
+          >
+        </div>
+        <!-- Ajouter d'autres matières ici -->
+      </div>
     </main>
-</body>
+  </body>
 </html>
