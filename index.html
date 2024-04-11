@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matieres Première Générale</title>
+    <title>Matières de Première Générale</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -26,19 +26,8 @@
             padding: 20px;
         }
 
-        h1, h2 {
+        h1 {
             color: white;
-        }
-
-        a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        a:hover {
-            color: #006699;
         }
 
         .subject-list {
@@ -48,40 +37,157 @@
             margin-top: 20px;
         }
 
-        .subject-item {
+        .subject-list a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        #maths {
+            background: linear-gradient(blue,cyan);
             width: 200px;
-            padding: 20px;
+            height: 80px;
             margin: 10px;
-            background-color: #ffffff;
             border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
             cursor:pointer;
         }
 
-        .subject-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        #maths:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px cyan;
+        }
+        
+        #francais {
+            background: linear-gradient(yellow,orange);
+            width: 200px;
+            height: 80px;
+            margin: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        #francais:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgb(255, 225, 0);
+        }
+        
+        #histoiregeo {
+            background: linear-gradient(red,crimson);
+            width: 200px;
+            height: 80px;
+            margin: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        #histoiregeo:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px crimson;
+        }
+
+        #hggsp {
+            background: linear-gradient(crimson, darkred);
+            width: 200px;
+            height: 80px;
+            margin: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        #hggsp:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px darkred;
+        }
+        #nsi {
+            background: linear-gradient(black,gray);
+            width: 200px;
+            height: 80px;
+            margin: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        #nsi:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px gray;
+        }
+
+        #anglais {
+            background: linear-gradient(darkgreen,lime);
+            width: 200px;
+            height: 80px;
+            margin: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        #anglais:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px lime;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Matieres de Première Générale</h1>
+        <h1>Matières de Première Générale</h1>
     </header>
     <main>
         <div class="subject-list">
-            <div class="subject-item">
-                <a href="mathematiques.html">Mathématiques</a>
+            <div id="maths">
+                <a href="./CARCOUETWEBSITE/MATHS/maths.html">Mathématiques</a>
             </div>
-            <div class="subject-item">
-                <a href="francais.html">Français</a>
+            <div id="francais">
+                <a href="./CARCOUETWEBSITE/FRANCAIS/francais.html">Français</a>
             </div>
-            <div class="subject-item">
-                <a href="histoire-geo.html">Histoire-Géographie</a>
+            <div id="histoiregeo">
+                <a href="./CARCOUETWEBSITE/HISTOIREGEO/histoiregeo.html">Histoire-Géographie</a>
             </div>
-            <div class="subject-item">
+            <div id="hggsp">
                 <a href="./CARCOUETWEBSITE/HGGSP/hggsp.html">Histoire-Géographie-Géopolitique & Sciences Politiques (HGGSP)</a>
+            </div>
+            <div id="nsi">
+                <a href="./CARCOUETWEBSITE/NSI/nsi.html">Numériques et Sciences Informatiques (NSI)
+                </a>
+            </div>
+            <div id="anglais">
+                <a href="./CARCOUETWEBSITE/ANGLAIS/anglais.html">Anglais</a>
             </div>
             <!-- Ajouter d'autres matières ici -->
         </div>
