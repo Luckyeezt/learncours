@@ -20,31 +20,51 @@
             padding: 20px;
         }
 
-        .button {
-            display: inline-block;
-            padding: 12px 24px;
-            font-size: 16px;
-            font-weight: 700;
-            text-align: center;
-            color: #ffffff;
-            background-color: #000000;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            margin-top: 20px;
-            text-decoration: none;
-        }
+#button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: orangered;
+}
+#button:hover {
+    opacity: 0.7;
+}
 
-        .button:hover {
-            background-color: white;
-            color: black;
-            border: 1px solid black;
-        }
+.button {
+    display: block;
+    width: 80%;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 20px auto; /* Ajoutez 'auto' pour centrer horizontalement */
+}
 
-        .org {
-            background-color: orange;
-        }
+.button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+a {
+    text-decoration: none;
+}
         
         .warn {
             font-size: 40px;
@@ -63,9 +83,10 @@
 <body>
     <header>
         <h1>Numériques Sciences Informatiques (NSI)</h1>
-        <a href="../../index.html" class="button org">Retour à l'accueil</a>
+        <a href="../../index.html" id="button">Retour à l'accueil</a>
     </header>
 
     🏗️ <h2 class="warn">LA PAGE EST EN CONSTRUCTION</h2> 🏗️
+    <a href="https://luckyeezt.github.io/docsjavascript/" class="button">Documentation Javascript (Française)</a>
 </body>
 </html>
