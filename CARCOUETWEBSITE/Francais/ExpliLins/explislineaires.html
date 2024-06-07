@@ -117,9 +117,7 @@
   <body>
     <div class="header">
       <h1>Explications Linéaires - Classe 1-G2</h1>
-      <h2 style="color:orangered">Mise à jour du 12 Avril 2024 : Ajout des plans pour toutes les explications linéaires.</h2>
-      <h2 style="color:orangered">Mise à jour du 14 Avril 2024 : Ajout de la lecture cursive "Le Bal Des Folles" (privé)</h2>
-      <h2 style="color:orangered">Mise à jour du 14 Avril 2024 (bis) : Ajout de la conclusion et des ouvertures pour chaque EL.</h2>
+      <h2 style="color:orangered">Mise à jour du 07 Juin : Ajout des dernières explications linéaires.</h2>
 
       <!-- Bouton pour rediriger vers un autre site -->
       <a href="../francais.html" id="button">Retour à l'accueil</a>
@@ -223,6 +221,46 @@
       </div>
 
       <div class="explic">
+        <button onclick="toPage(12)">
+          <h4>
+            Explication Linéaire 12 : Blaise Cendrars, Sonnets dénaturés, "Académie Medrano", 1923. 
+          </h4>
+        </button>
+      </div>
+
+      <div class="explic">
+        <button onclick="toPage(13)">
+          <h4>
+            Explication Linéaire 13 : Acte 1, scène 5 : La confrontation entre Argan & Toinette. 
+          </h4>
+        </button>
+      </div>
+
+      <div class="explic">
+        <button onclick="toPage(14)">
+          <h4>
+            Explication Linéaire 14 : Acte 2, scène 5 : Les compliments de Thomas Diafoirus. 
+          </h4>
+        </button>
+      </div>
+
+      <div class="explic">
+        <button onclick="toPage(15)">
+          <h4>
+            Explication Linéaire 15 : Acte 3, scène 12 : La fausse mort d'Argan. 
+          </h4>
+        </button>
+      </div>
+
+      <div class="explic">
+        <button onclick="toPage(16)">
+          <h4>
+            Explication Linéaire 16 : Beaumarchais, Acte 2, scène 13, Le Barbier de Séville.
+          </h4>
+        </button>
+      </div>
+
+      <div class="explic">
         <h4>Lecture Cursive : Le Bal des Folles, Victoria Màs</h4>
         <label>Mot de Passe : </label>
         <input
@@ -271,7 +309,22 @@
           case 11:
             window.location.href = "explilineaire11.html";
             break;
-          case "school":
+            case 12: 
+                window.location.href="explilineaire12.html"
+                break;
+            case 13:
+                window.location.href= "explilineaire13.html"
+                break;
+            case 14:
+                window.location.href = "explilineaire14.html"
+                break;
+            case 15:
+                window.location.href = "explilineaire15.html"
+                break;
+            case 16:
+                window.location.href = "explilineaire16.html"
+                break;
+         case "school":
             window.open("https://carcouet.paysdelaloire.e-lyco.fr/", "_blank");
             break; // Ajout du break ici
           default:
@@ -279,6 +332,7 @@
             break; // Ajout du break ici
         }
       }
+
 
       function verify() {
         const pass = document.getElementById("entry").value;
