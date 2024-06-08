@@ -6,139 +6,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les figures de style</title>
     <style>
-        body {
-            font-family: 'Helvetica', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-            transition: background-color 0.3s ease;
-        }
-        .container {
-            display: flex;
-            flex-wrap: wrap;
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+.container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 20px;
-        }
-        section {
-            background: #fff;
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 450px; /* Augmenter la largeur maximale */
-            width: 100%;
             box-sizing: border-box;
-            border-radius: 25px;
         }
-        h3 {
-            color: #4CAF50;
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 1.1em;
-            line-height: 1.6;
-            margin: 10px 0;
-        }
-        span {
-            background-color: #5df781;
-            padding: 0 5px;
-            border-radius: 3px;
-            font-weight: bold;
-        }
-        ol {
-            background-color: #ffffff;
-            border-radius: 25px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 400px;
-            padding: 10px;
-            text-align: center;
-            list-style: none;
-            margin: 0 auto; /* Ajouter cette ligne pour centrer la liste */
+section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+h3 {
+    color: #4CAF50;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+span {
+    background-color: #5df781;
+    padding: 0 5px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+ol {
+    background-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    padding: 10px;
+    text-align: center;
+    list-style: none;
+    margin: 20px auto; /* Center the list */
 }
 header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-    .analogie {
-        color:teal
-    }
-    .insistance {
-        color: green
-    }
-    .amplification {
-        color: orange
-    }
-    .opposition {
-        color: orangered
-    }
-    .substitution {
-        color: magenta
-    }
-    .attenuation {
-        color: rgb(179, 39, 179)
-    }
-
-        .search-bar {
-            margin-bottom: 20px;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            margin-top: 20px;
-        }
-        .search-bar input {
-            width: calc(100% - 24px);
-            padding: 10px;
-            font-size: 1em;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-        #darkModeToggle {
-            margin-left: auto;
-            cursor: pointer;
-            background-color: #fff;
-            padding: 5px 10px;
-            border-radius: 4px;
-            border: 1px solid #333;
-        }
-        #darkModeToggle:hover {
-            background-color: #333;
-            color: #fff;
-        }
-        .dark-mode{
-            background-color: #262626;
-            color: #fff;
-        }
-        .dark-mode section, .dark-mode ol {
-    background: #333; /* Changer la couleur de fond des sections en mode sombre */
-    color: white; /* Changer la couleur du texte des sections en mode sombre */
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
-        .dark-mode span {
-            color: black
-        }
+.analogie {
+    color: teal;
+}
+.insistance {
+    color: green;
+}
+.amplification {
+    color: orange;
+}
+.opposition {
+    color: orangered;
+}
+.substitution {
+    color: magenta;
+}
+.attenuation {
+    color: rgb(179, 39, 179);
+}
+.sonores {
+    color: gray
+}
+.search-bar {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.search-bar input {
+    width: calc(100% - 24px);
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#darkModeToggle {
+    margin-left: auto;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid #333;
+}
+#darkModeToggle:hover {
+    background-color: #333;
+    color: #fff;
+}
+.dark-mode {
+    background-color: #262626;
+    color: #fff;
+}
+.dark-mode section,
+.dark-mode ol {
+    background: #333;
+    color: white;
+}
+.dark-mode span {
+    color: black;
+}
+#button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: orangered;
+}
+#button:hover {
+    opacity: 0.7;
+}
 
-        #button {
-            display: inline-block;
-            padding: 12px 24px;
-            font-size: 16px;
-            font-weight: 700;
-            text-align: center;
-            color: #ffffff;
-            background-color: #000000;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: opacity 0.3s ease;
-            margin-top: 20px;
-            text-decoration: none;
-            background-color: orangered;
-        }
-        #button:hover {
-            opacity: 0.7;
-        }
     </style>
 </head>
 <body>
@@ -159,52 +165,61 @@ header {
         <li>Les figures de styles <b class="opposition">d'opposition</b></li>
         <li>Les figures de styles de <b class="substitution">substitution</b></li>
         <li>Les figures de styles <b class="attenuation">d'atténuation</b></li>
+        <li>Les fgures de styles <b class="sonores">sonores</b></li>
     </ol>
     <br>
 
     <div class="container">
         <section class="content">
             <h3 class="analogie">Comparaison :</h3>
-            <p>La comparaison établit un rapport de ressemblance entre deux éléments à l'aide d'un outil de comparaison (comme, tel, semblable à, pareil à).</p>
+            <p>La comparaison établit un rapport de ressemblance entre deux éléments (<span style="background-color: cyan">le comparé</span> & le <span style="background-color:rgb(238, 147, 147)">comparant</span>) à l'aide d'<span>un outil de comparaison</span> (comme, tel, semblable à, pareil à).</p>
             <p>
                 <b>Exemples :</b><br>
-                Il est fort <span>comme</span> un lion.<br>
-                il est sage <span>comme</span> une fleur.
+                <span style="background-color: cyan">Il</span> est fort <span>tel</span>  <span style="background-color:rgb(238, 147, 147)">un lion</span>.<br>
+                <span style="background-color: cyan">Cette fille</span> est belle <span>comme</span>  <span style="background-color:rgb(238, 147, 147)">un paysage</span>.<br>
             </p>
         </section>
 
         <section class="content">
             <h3 class="analogie">Personnification :</h3>
-            <p>C'est une figure de style qui permet de rendre vivant un objet, une chose, une idée comme si c'était un humain (avec des verbes par exemples)</p>
+            <p>C'est une figure de style qui permet de <b>rendre vivant un objet</b>, une chose, une idée comme si <b>c'était un humain</b> (avec des verbes par exemples).</p>
             <p>
                 <b>Exemples :</b><br>
                 La <span style="background-color: aquamarine;">forêt</span> <span>gémit</span> sous le vent.<br>
                 La <span style="background-color: aquamarine;">vie</span> <span>dort</span> sous le vent.<br>
                 La <span style="background-color: aquamarine;">mer</span> <span>danse</span> tendrement.<br>
+                Le <span style="background-color: aquamarine;">jour</span> les avait <span>réveillés</span>.
             </p>
         </section>
 
         <section class="content">
             <h3 class="analogie">Métaphore :</h3>
-            <p>C'est une comparaison mais sans utilisation d'un outil de comparaison (pas de comme / semblable (sinon c'est comparaison))</p>
+            <p>C'est une comparaison mais <b>sans utilisation</b> d'un outil de comparaison (pas de comme / semblable (sinon c'est comparaison)).</p>
             <p>
                 <b>Exemples :</b><br>
-                Il pleut <span>des cordes</span> (Comparaison : Il pleut comme des cordes)
+                Il pleut <span>des cordes</span>. (Comparaison : Il pleut comme des cordes)<br>
+                Le temps <span>c'est</span> de l'argent. (Comparaison : temps à l'argent)<br>
+                Il a un coeur <span>de</span> pierre. (Comparaison : coeur à pierre)<br>
+                Cet homme <span>est</span> est un dieu. (Comparaison : homme à dieu)
+
 
             </p>
         </section>
 
         <section class="content">
             <h3 class="analogie">Allégorie</h3>
-            <p>Elle décrit une idée abstraite,imaginée en employant une image concrète.</p>
+            <p>Elle décrit une <b>idée abstraite</b>,imaginée en employant une image concrète.</p>
             <p>
                 <b>Exemples : </b><br>
+                <span>La Mort</span> avec une faux. (La Mort = Faucheuse)<br>
+                <span>La Colombe</span> avec de l'olivier. (Colombe = Paix)
+
             </p>
         </section>
 
         <section class="content">
             <h3 class="insistance">Anaphore :</h3>
-            <p>Répétition d'une structure de mots au début de chaque nouvelle phrase qui se succèdent.</p>
+            <p><b>Répétition</b> d'une structure de mots au <b>début</b> de chaque nouvelle phrase qui se succèdent.</p>
             <p>
                 <b>Exemples :</b><br>
                 <span>Je suis</span> sage. <span>Je suis</span> gentil. <span>Je suis</span> honnête.<br><br>
@@ -214,20 +229,13 @@ header {
 
         <section class="content">
             <h3 class="insistance">Répétition :</h3>
-            <p>Répétition d'un même terme / mot / pronom etc.. (généralement séparées avec une virgule ou autre).</p>
+            <p><b>Répétition</b> plusieurs fois d'un même terme / mot / pronom etc.. (généralement séparées avec une virgule ou autre).</p>
             <p>
                 <b>Exemples :</b><br>
                 Il <span>marchait</span>,<span>marchait</span>, tout seul sous la pluie.<br>
-                Ce garcon <span>mangeait</span>,<span>mangeait</span> jusqu'à plus avoir faim.
+                Ce garcon <span>mangeait</span>,<span>mangeait</span> jusqu'à plus avoir faim.<br>
+                Le ciel était <span>gris</span>, la terre était <span>grise</span>, le blé était <span>gris</span>.
 
-            </p>
-        </section>
-
-        <section class="content">
-            <h3 class="insistance">Redondance</h3>
-            <p>Permet de créer l'insistance en accumulant plusieurs <b>synonymes</b> dans le même énoncé.</p>
-            <p>
-                <b>Exemples :</b><br>
             </p>
         </section>
 
@@ -236,33 +244,22 @@ header {
             <p>Consiste à répéter des termes et des expressions ayant le même sens afin de créer un effet d'insistance.</p>
             <p>
                 <b>Exemples :</b><br>
+                <span>Monter</span> en <span>haut</span>.<br>
+                <span>Descendre</span> en <span>bas</span>.<br>
+                <span>Un sourire</span> aux <span>lèvres</span>.
             </p>
         </section>
 
-                
-
-        <section class="content">
-            <h3 class="amplification">Allitération</h3>
-            <p>Consiste à la répétion d'une ou de plusieurs consonnes dans une phrase.</p>
-            <p>
-                <b>Exemples :</b><br>
-            </p>
-        </section>
-
-        <section class="content">
-            <h3 class="amplification">Assonance</h3>
-            <p>Consiste à la répétion d'un même son vocalique, mise en relief d'une sonorité.</p>
-            <p>
-                <b>Exemples :</b><br>
-            </p>
-        </section>
 
             <section class="content">
                 <h3 class="amplification">Hyperbole :</h3>
                 <p>C'est une exagération dans une phrase, on dit que c'est une hyperbole quand le propos est exagéré.</p>
                 <p>
                     <b>Exemples :</b><br>
-                    Nous allons pas t'attendre <span>1000 ans</span>.
+                    Nous allons pas t'attendre <span>1000 ans</span>.<br>
+                    Je <span>meurs</span> de faim.<br>
+                    Je t'aime à <span>la folie</span>.
+
                 </p>
             </section>
 
@@ -287,10 +284,20 @@ header {
         </section>
 
         <section class="content">
-            <h3 class="amplification">Accumulation</h3>
-            <p>En attente...</p>
+            <h3 class="amplification">Parallélisme</h3>
+            <p>Consiste à juxtaposer deux phrases,groupe de mots ou deux vers construits sur la même syntaxe (ABAB).</p>
             <p>
                 <b>Exemples :</b><br>
+                <span>J'ai</span> tendresse <span>pour</span> toi, <span>j'ai</span> passion <span>pour</span> elle.
+            </p>
+        </section>
+
+        <section class="content">
+            <h3 class="amplification">Accumulation</h3>
+            <p>Enumération plus ou moins longue de termes (excès,amplification)</p>
+            <p>
+                <b>Exemples :</b><br>
+
             </p>
         </section>
 
@@ -299,20 +306,22 @@ header {
             <p>Figure de style où les contraires s'opposent en symétrie dans une forme AB-BA.</p>
             <p>
                 <b>Exemples : </b><br>
+                Il faut <span>manger</span> pour <span>vivre</span> et non <span>vivre</span> pour <span>manger</span>.<br>
+                Il faut <span>vivre</span> pour <span>aimer</span> et non <span>aimer</span> pour <span>vivre</span>.
             </p>
         </section>
 
-        <section class="content">
+        <!--<section class="content">
             <h3 class="opposition">Ironie : </h3>
             <p>Expression contraire à ce qui est pensé avec l'intention de faire comprendre l'inverse.</p>
             <p>
                 <b>Exemples : </b><br>
             </p>
-        </section>
+        </section>-->
 
         <section class="content">
             <h3 class="opposition">Oxymore :</h3>
-            <p>Association de deux termes qui se contredit dans une même phrase</p>
+            <p>Association de deux termes qui sont disposés l'un à côte de l'autre (sans rien entre eux) dans une phrase.</p>
             <p>En jaune ce sont les contrastes <span style="background-color: yellow;">doux</span> et en bleu les constrastes <span style="background-color: #00e5ff;">forts</span>.</p>
             <p>
                 <b>Exemples :</b><br>
@@ -323,28 +332,42 @@ header {
         </section>
 
         <section class="content">
+            <h3 class="opposition">Paradoxe</h3>
+            <p>Enonce une opinion contraire à l'option commune, pour surprendre,choquer.</p>
+            <p>
+                <b>Exemples :</b><br>
+                Les premiers seront les derniers.
+            </p>
+        </section>
+
+        <section class="content">
             <h3 class="opposition">Antithèse : </h3>
-            <p>Rapprochement de deux termes ayant des sens opposés différents dans des groupes de mots différents.</p>
+            <p>Rapprochement de deux termes ayant des sens opposés différents (peut être disposé avec d'autres mots entre eux).</p>
             <p>
                 <b>Exemples : </b><br>
                 <span>La lumière</span> est perdue dans <span>la nuit</span>.
+                Elle dort <span>jour</span> et <span>nuit</span>.
             </p>
         </section>
 
         <section class="content">
             <h3 class="opposition">Antiphrase</h3>
-            <p>Consiste à dire le contraire de ce que l'on pense</p>
+            <p>Consiste à dire le contraire de ce que l'on pense, quelques fois ironique.</p>
             <p>
                 <b>Exemples : </b><br>
+                Tu as eu deux en maths, Félicitations !
             </p>
         </section>
 
         <section class="content">
             <h3 class="substitution">Périphrase : </h3>
-            <p>Remplacement d'un terme par une expression qui lui est synonyme.</p>
+            <p>Remplacement d'un mot par plusieurs mots.</p>
             <p>
                 <b>Exemples : </b><br>
-                <span>L'or noir</span> était très recherché dans les années 2000. (Ici, or noir = pétrole)
+                <span>L'or noir</span> était très recherché dans les années 2000. (Ici, or noir = pétrole)<br>
+                Vous parlez bien la <span>langue de Molière</span>. (ici langue de Molière = francais).<br>
+                <span>Le Président de la République</span>. (Emmanuel Macron)<br>
+                La <span>ville Lumière</span>. (Paris)
             </p>
         </section>
 
@@ -360,9 +383,12 @@ header {
 
         <section class="content">
             <h3 class="substitution">Synecdoque</h3>
-            <p>En attente...</p>
+            <p>Elle consiste à désigner la partie pour le tout (ou le tout pour la partie)</p>
             <p>
                 <b>Exemples :</b><br>
+                Le <span>voile</span> au loin. (voile = partie du bateau)<br>
+                La <span>France</span> vient de gagner. (France = l'équipe de foot)
+
             </p>
         </section>
 
@@ -379,6 +405,8 @@ header {
             <p>Atténuation d'un réalité <b>difficile</b> ou <b>choquante</b>.</p>
             <p>
                 <b>Exemples : </b><br>
+                Il nous a <span>quitté</span>. (Il est mort)
+
             </p>
         </section>
 
@@ -386,25 +414,37 @@ header {
 
         <section class="content">
             <h3 class="attenuation">Litote : </h3>
-            <p>Atténuation d'une expression pour en faire comprendre davantage (idée sous-entendue).</p>
+            <p>Atténuation d'une expression pour en faire comprendre davantage (idée sous-entendue, souvent négative).</p>
             <p>
                 <b>Exemples : </b><br>
+                Ce n'est <span>pas faux</span>. (c'est vrai)
             </p>
         </section>
 
         <section class="content">
-            <h3>Paronomase</h3>
-            <p>En attente...</p>
+            <h3 class="sonores">Allitération</h3>
+            <p>Consiste à la répétion d'une ou de plusieurs consonnes dans une phrase.</p>
             <p>
                 <b>Exemples :</b><br>
+                Les chaus<u>settes</u> de l'archidu<u>chesse</u> sont-elles <u>sèches</u> ou archi-<u>sèches</u> ?
             </p>
         </section>
 
         <section class="content">
-            <h3>Parallélisme</h3>
-            <p>En attente...</p>
+            <h3 class="sonores">Assonance</h3>
+            <p>Consiste à la répétion d'un même son vocalique, mise en relief d'une sonorité.</p>
             <p>
                 <b>Exemples :</b><br>
+                Je fais sou<span>vent</span> ce rêve étr<span>ange</span> et pénétr<span>ant</span><br>
+                Les <span>voy</span>elles de la <span>voi</span>x <span>voi</span>lée.
+           </p>
+        </section>
+        <section class="content">
+            <h3 class="sonores">Paronomase</h3>
+            <p>Rapprochement de deux homonymes (qui se prononcent pareil)</p>
+            <p>
+                <b>Exemples :</b><br>
+                Qui s'ex<span>cuse</span> s'ac<span>cuse</span>.
             </p>
         </section>
 
