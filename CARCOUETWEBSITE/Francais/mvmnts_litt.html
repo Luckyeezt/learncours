@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouvement Littéraires</title>
+    <style>
+        body {
+            font-family: 'Helvetica', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            transition: background-color 0.3s ease;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        #darkModeToggle {
+            cursor: pointer;
+            background-color: #fff;
+            padding: 5px 10px;
+            border-radius: 4px;
+            border: 1px solid #333;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        #darkModeToggle:hover {
+            background-color: #333;
+            color: #fff;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #000000;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        table td:nth-child(4) {
+    width: 100px; /* ajustez la valeur selon vos besoins */
+    text-align: center;
+}
+
+        #button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: orangered;
+}
+#button:hover {
+    opacity: 0.7;
+}
+.dark-mode {
+            background-color: #262626;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Les Mouvements Littéraires</h1>
+        <a href="francais.html" id="button">Retour à l'accueil</a>
+    </header>
+    <div class="search-bar">
+        <button id="darkModeToggle" onclick="toggleDarkMode()">Mode Sombre</button>
+    </div>
+    <br>
+    <h2 style="text-align: center;">Les Mouvements Littéraires</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Mouvement</th>
+                <th>Principe</th>
+                <th>Siècle / Contexte</th>
+                <th>Genre</th>
+                <th>Les Auteurs Principaux</th>
+                <th>Oeuvres</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><b>Humanisme:<br> 1490-1580</b></td>
+                <td>- Sous l'emprise de la religion. (Fin Moyen Age)<br>
+                    - Encourager les sciences et les arts<br>
+                    - Retour au savoir de l'Antiquité </td>
+                <td>Apparition au XVe (15ème siècle) / Apparition en France au XVIe (16ème siècle)<br>
+                - Renaissance<br>
+                - Naissance du protestantisme (1517)<br>
+                - Guerres de religions(1562-1598)<br>
+            </td>
+            <td>Roman<br>Essai<br>Portrait<br>Poésie<br></td>
+                <td>Thomas More, Rabelais, Erasme, Montaigne</td>
+                <td>Erasme,<em>Eloge de la folie</em><br><td>
+            </tr>
+
+            <tr>
+                <td><b>La Pléiade</b></td>
+                <td>La Pléiade était un groupe de poètes français de la Renaissance qui ont cherché à renouveler la poésie française en s'inspirant des modèles classiques de l'Antiquité.<br>
+                - Enrichissent la littérature française en s'inspirant de l'antiquité Grecque & Latine</td>
+                <td>Apparition dans la 2ème moitié du XVIème <b>(16ème siècle)</b><br>
+                - Renaissance<br>
+                - Guerres de religions(1562-1598)<br>
+            </td>
+            <td>Ode<br>Hymne<br>Sonnet<br></td>
+                <td>Du Bellay, Ronsart</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td><b>Baroque :<br> 1570 - 1650</b></td>
+            <td>
+                - Exprimer la luxuriance de la Nature et des sensations.<br>
+                - Promouvoir l'imagination et la liberté artistique en opposition aux normes établies.<br>
+                - Apprécier le chaos et l'excès plutôt que l'ordre et la modération.<br>                
+                <td>Apparition lors de la 1re moitié du XVIIème <b>(17ème siècle)</b><br>
+                    - Guerre de Trente Ans (1618 - 1648)<br>
+                    - Règne de Louis XIV (1610 - 1643)<br>
+                    - Fronde : révolte des nobles (1648-1653)
+            </td>
+            <td>Théâtre<br>Roman<br>Poésie<br></td>
+                <td>Aubigné, Viau, Corneille, Scarron, Sorel, Sponde</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td><b>Classicisme:<br> 1630-1715</b></td>
+            <td>
+                - Plaire et instruire (placere et docere).<br>
+                - Établir un idéal esthétique répondant à règles strictes (les trois unités au théâtre).<br>
+                - Rechercher l’équilibre et la mesure.<br>  
+                - Défendre un style simple et naturel inspiré des modèles antiques, grecs et latins.             
+                <td>Apparition lors de la 2ème moitié du XVIIème <b>(17ème siècle)</b><br>
+                    - Règne de Louis XIV (1643 - 1715)<br>
+            </td>
+            <td>Théâtre<br>Fables<br>Textes courts<br></td>
+                <td>Corneille, Racine, Molière, la Fontaine, La Bruyère, Boileau</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td><b>Lumières:<br> 1690 - 1789</b></td>
+            <td>
+                - Utiliser la <b>Raison</b> contre l’ obscurantisme, l’ intolérance et le despotisme.<br>
+                - Développer l’esprit critique.<br>
+                - Défendre la liberté,l’égalité.<br>  
+                - Diffuser les sciences et les techniques : l’Encyclopédie de Diderot et d’Alembert           
+                <td>Apparition lors de tout le XVIIIème <b>(18ème siècle)</b><br>
+                    - Règne de Louis XV (1710-1774) & Louis XVI (1774 - 1793)<br>
+                    - Affaiblissement du pouvoir royal<br>
+                    - Révolution Francaise (1789)<br>
+                    - 1ère République (1792 - 1804)
+            </td>
+            <td>Essai<br>Pamphlet<br>Conte philosophique et ironie<br>Dictionnaire<br>Théâtre</td>
+                <td>Montesquieu, Voltaire, Rousseau, Diderot, Beaumarchais, Marivaux</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td><b>Romantisme:<br> 1789 - 1860</b></td>
+            <td>
+                - Exalter les passions et les sentiments contre la Raison des siècles précédents.<br>
+                - Retrouver le lien avec la Nature.<br>
+                - Défendre la liberté des peuples. 
+                <td>Apparition au début du XIXème <b>(19ème siècle)</b><br>
+                    - 1er Empire : Napoléon 1er (1804-1814)<br>
+                    - Restauration de la monarchie (1814-1830)<br>
+                    - 2ème République (1848-1851)
+            </td>
+            <td>Autobiographie<br>Drame romantique : (opposé au théâtre classique du 17e s)<br>Roman et nouvelle<br>Dictionnaire<br>Poésie lyrique</td>
+                <td>Victor Hugo, Alfred de Musset, Chateaubriand, Lamartine, Vigny, Nerval</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td><b>Réalisme</b></td>
+            <td>
+                - Peindre la réalité sociale sans l’idéaliser.<br>
+                - Décrire la vie quotidienne de tous les milieux sociaux de façon objective.
+                <td>Apparition au XIXème <b>(19ème siècle)</b><br>
+                    - Restauration de la monarchie (1814-1830)<br>
+                    - 2ème République (1848-1851)<br>
+                    - Second Empire (1852-1870)
+            </td>
+            <td>Roman et nouvelles</td>
+                <td>Balzac, Stendhal, Flaubert</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td><b>Naturalisme:<br> 1850 - 1900</b></td>
+            <td>
+                - Décrire scientifiquement la société<br>
+                - Montrer les mécanismes qui déterminent la société (hérédité, contexte, fléaux sociaux...)<br>
+                <td>Apparition pendant la 2ème moitié du XIXème <b>(19ème siècle)</b><br>
+                    - Second Empire : Napoléon III (1852-1870)<br>
+                    - 3ème République (1870-1940)
+            </td>
+            <td>Roman et nouvelles, Adaptations théâtrales</td>
+                <td>Zola, les Frères Goncourts, Maupassant</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td><b>Symbolisme:<br>1886-1895</b></td>
+            <td>Opposé au Naturalisme & au Réalisme, sensibles à la musique des mots et des vers, Besoin de renouer avec cette alliance originelle de la musique & de la poésie</td>
+                <td>Apparition fin du XIXème <b>(19ème siècle)</b><br>
+                    - Second Empire : Napoléon III (1852-1870)<br>
+                    - 3ème République (1870-1940)
+            </td>
+            <td>Poésies</td>
+                <td>Baudelaire, Verlaine, Rimbaud, Laforgue</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td><b>Surréalisme:<br>1916-1940</b></td>
+                <td>Attirés par la révolution bolchévique de 1917, opposés à toutes les formes de fascisme et aux religions.<br><b>Thèmes :</b> Le rêve, l'inconscient, le merveilleux, l'amour et le mysticisme.</td>
+                <td>Apparition pendant la 1ère moitié du XXème <b>(20ème siècle)</b><br>
+                    - Première Guerre Mondiale (1914-1918)<br>
+                    - Révolution Russe de 1917 (1917-1923)<br>
+                    - Montée du Fascime & du Nazisme
+            </td>
+            <td>Poésies, Romans, Récits oniriques, </td>
+                <td>Aragon, Breton, Paul Eluard, Desnos</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td><b>Le Nouveau Roman:<br>1950-1990</b></td>
+                <td></td>
+                <td>Apparition pendant la 2ème moitié du XIXème <b>(19ème siècle)</b><br>
+                    - Second Empire : Napoléon III (1852-1870)<br>
+                    - 3ème République (1870-1940)
+            </td>
+            <td>Roman et nouvelles, Adaptations théâtrales</td>
+                <td>Robbe Grillet, Butor, Sarraute, Claude Simon</td>
+                <td></td>
+            </tr>
+
+            
+        </tbody>
+    </table>
+    <script>
+        function toggleDarkMode() {
+            var body = document.body;
+            body.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>
