@@ -36,6 +36,30 @@
             padding: 20px;
             text-align: center;
         }
+        .details-container {
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.details-summary {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.details-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+}
+
         #darkModeToggle {
             cursor: pointer;
             background-color: #fff;
@@ -69,6 +93,11 @@
 #button:hover {
     opacity: 0.7;
 }
+
+.red-underline {
+            text-decoration: underline;
+            text-decoration-color: red;
+        }
         .dark-mode {
             background-color: #262626;
             color: #fff;
@@ -95,19 +124,23 @@
             <p>Le commentaire est fait en 3 parties : <a href="#introduction"><b style="color:red">Introduction</b></a> | <a href="#dev"><b style="color:red">Développement</b></a> | <a href="#conclusion"><b style="color:red">Conclusion</b></a>
         </section>
 
-        <section id="introduction">
+        <details class="details-container">
+            <summary class="details-summary">La méthode pour un roman / littérature d'idées.</summary>
+        <section class="details-content">
             <h3 style="color: red;text-align: center;">Introduction</h3>
             <p>La première chose à faire lorsque vous faites face à votre texte, vous devrez tenter de le cerner, en le lisant plusieurs fois et en dégageant de quoi parle de le texte.</p>
 
             <p><b style="color:red">Etape 1 : Présentation du texte :  </b> Introduire le nom du texte, le genre, l'auteur du texte, la date de publication, le siècle, identifier le registre.</p>
-            Exemple : Le <b>dormeur du val</b> est un <b>poème</b> de <b>Arthur Rimbaud</b> écrit pendant le <b>19ème siècle</b> en <b>1870</b>, c'est un poème issu du <b>registre lyrique</b>.
+            Exemple : Le <b>dormeur du val</b> est un <b>poème</b> issu du <b>recueil <span class=".red-underline">Les Cahiers de Douai</span></b> de <b>Arthur Rimbaud</b> écrit pendant le <b>19ème siècle</b> en <b>1870</b>, c'est un poème issu du <b>registre lyrique</b>.
             <p><b style="color:red">Etape 2 : Contextualiser :</b> Contextualiser historiquement le texte,expliquer le mouvement littéraire auquel il appartient.
             <p><b style="color:red">Etape 3 : Court résumé du texte : </b>  situer la place du passage dans l'œuvre. Préciser l'idée générale du passage à commenter, évoquer ce qui passe courtement dans cet extrait.</p>
             <p><b style="color:red">Etape 4 : Introduire la problématique + le plan :</b> 
                 <ul>
                     <li><b style="color:green">Problématique</b> : A travers ce texte, nous allons (voir / nous demander) .. (en quoi / comment) l'auteur (cherche,raconte,montre,critique)...</li>
                     <li><b style="color:red">Plan</b> : (Pour/Afin de répondre à cette/la problématique), nous allons (voir,examiner..) en premier (1er axe), ensuite (2eme axe) et pour finir (3eme axe).</li>
-        </section>
+                </ul>
+                <p><b style="color:red">IMPORTANT !!</b> - Ne passez pas de ligne entre vos étapes de l'introduction ! tout dois faire un seul paragraphe</p>
+            </section>
 
         <section id="dev">
             <h3 style="color: red;text-align: center;">Développement</h3>
@@ -133,6 +166,32 @@
             <p><b style="color:red">Etape 2 : Répondre à la problématique :</b> Dans un second temps, vous devez répondre à votre problématique posée dans l'introduction.</p>
             <p><b style="color:red">Etape 3 : Ouverture :</b> Proposer une ouverture vers une autre oeuvre qui exploite le même thème.</p>
         </section>
+    </details>
+
+    <details class="details-container">
+        <summary class="details-summary">La méthode pour la poésie</summary>
+    <section class="details-content">
+        <h3 style="color: red;text-align: center;">Introduction</h3>
+        <p>La première chose à faire lorsque vous faites face à votre poésie, vous devrez tenter de le cerner, en le lisant plusieurs fois et en dégageant de quoi parle ce poème.</p>
+
+        <p><b style="background-color:cyan">(Pas Obligatoire) - Etape 1 : Accroche (Amorce) : </b> L'accroche permet de donner un apercu et de donner envie à votre lecteur de vous lire, il s'agit d'une phrase pour mettre le lecteur dans le contexte, utilisez l'exemple de la poésie du XIXème par exemple, ou une citation célèbre d'une poésie que vous connaissez.</p>
+        <p><b style="background-color: rgb(249, 177, 201);">Etape 2 : Présentation du texte + résumé :  </b> Introduire le le titre de la poème, le nom du poète, la date de publication, le siècle, identifier le registre en utilisant le paratexte (début de la feuille).</p>
+        <p><b style="background-color: darkseagreen;">Etape 2 (bis) : Forme & Fond : </b>  Indiquer le fond et la forme du poèmes (la versification)</p>
+        <p><b style="color:red">Etape 4 : Introduire la problématique + le plan :</b> 
+            <ul>
+                <li><b style="background-color: lime;">Problématique</b> : A travers ce texte, nous allons (voir / nous demander) .. (en quoi / comment) l'auteur (cherche,raconte,montre,critique)...</li>
+                <li><b style="background-color: yellow;">Plan</b> : (Pour/Afin de répondre à cette/la problématique), nous allons (voir,examiner..) en premier (1er axe), ensuite (2eme axe) et pour finir (3eme axe).</li>
+            </ul>
+            <p><b style="color:red">IMPORTANT !!</b> - Ne passez pas de ligne entre vos étapes de l'introduction ! tout dois faire un seul paragraphe</p>
+            <h3>EXEMPLE : </h3>
+            <p style="font-size: 18px;"><span style="background-color: cyan">Au siècle de la Renaissance et de l’Humanisme, le groupe des poètes de la Pléiade se donne pour mission d’enrichir la langue française afin d’égaler le latin et le grec, imiter et dépasser les auteurs antiques tout en imposant de nouvelles formes poétiques, comme Joachim du Bellay lorsqu’il publie Les Antiquités de Rome, en 1548, à son retour d’Italie : parti avec l’enthousiasme de découvrir la cité antique, il connaît la déception car Rome n’est plus que ruines et la société qu’il y côtoie que paraître, hypocrisie et ambition.</span> 
+                <span style="background-color: rgb(249, 177, 201);">À ce propos, le texte qu’il nous est demandé d’analyser, « Nouveau venu, qui cherches Rome en Rome », est le troisième des Antiquités de Rome dont le titre entier laisse présager les thèmes majeurs du recueil : la gloire et le déclin de Rome : Les Antiquités de Rome, contenant une générale description de la grandeur, et comme une déploration de sa ruine, plus un songe ou vision sur le même sujet.</span>
+                <span style="background-color: darkseagreen;">À travers un sonnet composé de décasyllabes dont le fond et la forme rappellent les épigrammes antiques, le poète humaniste évoque sur un mode élégiaque le passé glorieux de la Rome antique en l’opposant à la Rome contemporaine.</span>
+                <span style="background-color: lime">on pourra se demander comment du Bellay, à travers cette opposition entre l’idéal et la triste réalité, propose une réflexion plus profonde sur le caractère éphémère des civilisations.</span>
+                <span style="background-color: yellow">Pour répondre à cette question, nous verrons que grâce à l’image du désenchantement du poète face à la Rome contemporaine et sa lamentation sur les ruines de la Rome antique, la ville devient un motif poétique qui traverse les époques depuis l’évocation de son passé glorieux jusqu’à sa décadence persistante, permettant à du Bellay de réfléchir plus généralement à la question de la vanité du monde et de la fuite du temps</span></p>
+            </p>
+        </section>
+    </details>
     </div>
 
     <script>
