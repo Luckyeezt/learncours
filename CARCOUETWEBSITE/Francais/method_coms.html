@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La méthodologie pour le bac de français.</title>
+    <style>
+        body {
+            font-family: 'Helvetica', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            transition: background-color 0.3s ease;
+        }
+        .container {
+            display: flex;
+            flex-direction: column; /* Affichage en colonne pour empiler les sections */
+            align-items: center; /* Centrer horizontalement */
+            margin-left: 200px;
+            margin-top: 15px;
+            width: 1250px;
+        }
+        section {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%; /* Pour prendre toute la largeur */
+            border-radius: 25px;
+            margin-bottom: 20px; /* Espacement entre les sections */
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        #darkModeToggle {
+            cursor: pointer;
+            background-color: #fff;
+            padding: 5px 10px;
+            border-radius: 4px;
+            border: 1px solid #333;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        #darkModeToggle:hover {
+            background-color: #333;
+            color: #fff;
+        }
+        #button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: orangered;
+}
+#button:hover {
+    opacity: 0.7;
+}
+        .dark-mode {
+            background-color: #262626;
+            color: #fff;
+        }
+        .dark-mode section {
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>La méthodologie pour le bac de français.</h1>
+        <a href="francais.html" id="button">Retour à l'accueil</a>
+    </header>
+    <button id="darkModeToggle" onclick="toggleDarkMode()">Mode Sombre</button>
+
+    <div class="container">
+        <section>
+            <h3 style="color:red;text-align: center;">Un commentaire de texte, c'est quoi ?</h3>
+            <p>Un commentaire de texte est une analyse approfondie et critique d'un texte littéraire. Il vise à comprendre les significations profondes du texte, ses thèmes, ses techniques stylistiques et ses implications culturelles.</p>
+            <p>Cette méthode consiste à examiner attentivement chaque élément du texte, y compris son contenu, son style, sa structure, ses figures de style, etc. Elle implique également une réflexion sur le contexte historique, social et culturel dans lequel le texte a été écrit.</p>
+            <p>Le but du commentaire de texte est de fournir une interprétation éclairante et originale du texte, en mettant en lumière ses aspects les plus importants et en les reliant à des idées plus larges et à d'autres œuvres littéraires ou intellectuelles.</p>
+            <p>Le commentaire est fait en 3 parties : <a href="#introduction"><b style="color:red">Introduction</b></a> | <a href="#dev"><b style="color:red">Développement</b></a> | <a href="#conclusion"><b style="color:red">Conclusion</b></a>
+        </section>
+
+        <section id="introduction">
+            <h3 style="color: red;text-align: center;">Introduction</h3>
+            <p>La première chose à faire lorsque vous faites face à votre texte, vous devrez tenter de le cerner, en le lisant plusieurs fois et en dégageant de quoi parle de le texte.</p>
+
+            <p><b style="color:red">Etape 1 : Présentation du texte :  </b> Introduire le nom du texte, le genre, l'auteur du texte, la date de publication, le siècle, identifier le registre.</p>
+            Exemple : Le <b>dormeur du val</b> est un <b>poème</b> de <b>Arthur Rimbaud</b> écrit pendant le <b>19ème siècle</b> en <b>1870</b>, c'est un poème issu du <b>registre lyrique</b>.
+            <p><b style="color:red">Etape 2 : Contextualiser :</b> Contextualiser historiquement le texte,expliquer le mouvement littéraire auquel il appartient.
+            <p><b style="color:red">Etape 3 : Court résumé du texte : </b>  situer la place du passage dans l'œuvre. Préciser l'idée générale du passage à commenter, évoquer ce qui passe courtement dans cet extrait.</p>
+            <p><b style="color:red">Etape 4 : Introduire la problématique + le plan :</b> 
+                <ul>
+                    <li><b style="color:green">Problématique</b> : A travers ce texte, nous allons (voir / nous demander) .. (en quoi / comment) l'auteur (cherche,raconte,montre,critique)...</li>
+                    <li><b style="color:red">Plan</b> : (Pour/Afin de répondre à cette/la problématique), nous allons (voir,examiner..) en premier (1er axe), ensuite (2eme axe) et pour finir (3eme axe).</li>
+        </section>
+
+        <section id="dev">
+            <h3 style="color: red;text-align: center;">Développement</h3>
+            Votre développement doit être fait soit en 2 ou 3 parties accompagnée d'une ou deux sous-parties chacunes.<br>
+            Il vous faudra mettre un alinéa à chaque fois que vous commencez une partie / sous-partie
+            <h3 style="color:red">Axe 1</h3>
+                <p>Présentation de l'axe 1 en général, Tout d'abord,on voit..</p>
+                <ol>
+                    <li>A) Sous-partie 1</li>
+                    <li>B) Sous-partie 2</li>
+                </ol>
+                Faire un possible bilan de l'Axe 1<br>
+            <h3 style="color:red">Axe 2</h3>
+                    <ol>
+                        <li>A) Sous-partie 1</li>
+                        <li>B) Sous-partie 2</li>
+                    </ol>
+        </section>
+
+        <section id="conclusion">
+            <h3 style="color: red;text-align: center;">Conclusion</h3>
+            <p><b style="color:red">Etape 1 : Synthétiser : </b> Résumer brièvement les idées exploitées dans le dévéloppement.</p>
+            <p><b style="color:red">Etape 2 : Répondre à la problématique :</b> Dans un second temps, vous devez répondre à votre problématique posée dans l'introduction.</p>
+            <p><b style="color:red">Etape 3 : Ouverture :</b> Proposer une ouverture vers une autre oeuvre qui exploite le même thème.</p>
+        </section>
+    </div>
+
+    <script>
+        function toggleDarkMode() {
+            var body = document.body;
+            body.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>
